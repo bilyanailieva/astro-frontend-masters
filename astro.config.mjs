@@ -6,10 +6,7 @@ import netlify from "@astrojs/netlify/functions";
 
 // https://astro.build/config
 export default defineConfig({
-  output: 'hybrid',
-  experimental: {
-    hybridOutput: true
-  },
+  output: 'static',
   site: 'https://astro-frontend-masters-bilyanailieva.netlify.app',
   integrations: [react({
     include: ['**/*.react.tsx', '**/*.react.jsx']

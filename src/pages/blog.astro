@@ -11,11 +11,11 @@ const blogPosts = await getCollection('blog');
             return (
                 <div class="post">
                     <h2>
-                        <a href={`/blog/${post.slug}`}>{post.data.title}</a>
+                        <a href={`/blog/${post.id}`}>{post.data.title}</a>
                     </h2>
                     <time datetime={post.data.date.toISOString()}>{post.data.date.toDateString()}</time>
                     <p>{post.data.description}</p>
-                    <a href={`/blog/${post.slug}`}>Read post</a>
+                    <a href={`/blog/${post.id}`}>Read post</a>
                 </div>
             )
         })}
